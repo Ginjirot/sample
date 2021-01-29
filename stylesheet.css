@@ -99,17 +99,36 @@ input, select {
 
 /* その他のスタイルは以下に記述していきます */
 
-header {
+.flex {
     display: flex;
-    flex-direction: row;
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
 }
+.center {
+    justify-content: center;
+}
+.triangle2{
+    border-top: 20px solid transparent;
+    border-right: 20px solid skyblue;
+    border-bottom: 20px solid transparent;
+    height: 0;
+  }
+
+  .triangle3{
+    border-top: 20px solid transparent;
+    border-left: 20px solid skyblue;
+    border-bottom: 20px solid transparent;
+    height: 0;
+  }
 
 .label {
- background-color: skyblue;
- margin: 10px auto 10px 20%;
+ background-color: skyblue; 
+ height: 40px;
+ line-height: 40px;
+ /* margin: 10px auto 10px 20%; */
+ }
 
-}
 
 .catchcopy {
   height: 30vw;
@@ -147,19 +166,16 @@ header {
 }
 
 .one_line2 {
-    display: flex;
     justify-content: space-around;
     position: relative;
-    text-align:center;
-
 }
 
 .circle {
+    /* display: inline-block; */
     display: flex;
-    position: relative;
-    display: inline-block;
-    width: 80px;
-    height: 80px;
+    align-items: center;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background: skyblue;
 }
@@ -172,12 +188,24 @@ header {
     font-size: 20px;
 }
 
+.triangle{
+    border-top: 20px solid darkgray;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    width: 0px;
+    margin: 0 auto;
+  }
+
 .tel_and_inquiry {
     display: flex;
     flex-direction: row;
+
+    /* text-align: center; */
+}
+
+.telcolor {
     background-color: darkgrey;
     margin: 50px 20% 50px 20%;
-    /* text-align: center; */
 }
 
 .tel {
@@ -200,4 +228,13 @@ font-size: 15px;
 footer {
     background-color: darkgrey;
     padding: 25px;
+}
+
+@media (max-width: 500px) {
+    .pc_image {
+        display: none;
+    }
+    .one_line div {
+        width: 100%;
+    }
 }
