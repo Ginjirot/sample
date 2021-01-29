@@ -99,6 +99,18 @@ input, select {
 
 /* その他のスタイルは以下に記述していきます */
 
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.label {
+ background-color: skyblue;
+ margin: 10px auto 10px 20%;
+
+}
+
 .catchcopy {
   height: 30vw;
   text-align: center;
@@ -129,4 +141,63 @@ input, select {
 
 .one_line div {
   width: 50%;
+  background-color: darkgrey;
+  color: white;
+  padding: 30px;
+}
+
+.one_line2 {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align:center;
+
+}
+
+.circle {
+    display: flex;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: skyblue;
+}
+
+.subtitle {
+    background-color: darkgrey;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tel_and_inquiry {
+    display: flex;
+    flex-direction: row;
+    background-color: darkgrey;
+    margin: 50px 20% 50px 20%;
+    /* text-align: center; */
+}
+
+.tel {
+display: flex;
+flex-direction: column;
+text-align: center;
+margin: auto auto auto auto;
+}
+
+.inquiry {
+text-align: center;
+width: 200px;
+height: 50px;
+background-color: red;
+margin: 10px auto 10px auto;
+color: darkgrey;
+font-size: 15px;
+}
+
+footer {
+    background-color: darkgrey;
+    padding: 25px;
 }
